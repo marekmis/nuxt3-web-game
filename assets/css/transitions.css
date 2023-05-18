@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-enter-active,
+.page-leave-active {
+  @apply transition-all translate-y-2 opacity-0;
+}
+.page-enter-from,
+.page-leave-to {
+  @apply opacity-0;
+}
+
+.swap-top-enter-active,
+.swap-top-leave-active {
+  @apply transition-all duration-100;
+}
+
+.swap-top-enter-from,
+.swap-top-leave-to {
+  @apply opacity-30 translate-y-1;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  @apply transition-all opacity-0 duration-1000;
+}
+.fade-enter-from,
+.fade-leave-to {
+  @apply opacity-0;
+}
+
+.trans-page {
+  view-transition-name: trans-page;
+  contain: paint;
+}

@@ -1,0 +1,5 @@
+:root {
+  --speed-slow: 1s;
+  --speed-medium: 0.45s;
+  --speed-fast: 0.3s;
+}

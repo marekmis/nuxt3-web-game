@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-delay-slow {
+  animation-delay: calc(var(--speed-slow) / -2);
+}
+.animation-delay-medium {
+  animation-delay: calc(var(--speed-medium) / -2);
+}
+.animation-delay-fast {
+  animation-delay: calc(var(--speed-fast) / -2);
+}

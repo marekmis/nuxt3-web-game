@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "serve dist",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:js && npm run lint:prettier",
+    "lintfix": "prettier --write --list-different . && npm run lint:js --fix",
+    "test": "vitest --dom"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^3.3.3",
+    "@nuxtjs/device": "^3.1.0",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/tailwindcss": "^6.6.4",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vue/test-utils": "^2.3.2",
+    "@vueuse/core": "^10.1.2",
+    "@vueuse/nuxt": "^10.1.2",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vitest": "^0.0.57",
+    "happy-dom": "^9.1.7",
+    "jsdom": "^21.1.1",
+    "nuxt": "^3.4.1",
+    "nuxt-gtag": "^0.5.5",
+    "prettier": "^2.8.7",
+    "serve": "^14.2.0",
+    "typescript": "^5.0.3",
+    "vitest": "^0.29.8"
+  },
+  "dependencies": {
+    "@phosphor-icons/vue": "^2.0.1",
+    "@pinia/nuxt": "^0.4.8",
+    "pinia": "^2.0.34",
+    "tailwind-gradient-mask-image": "^1.0.0"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}
